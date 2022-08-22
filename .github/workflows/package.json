@@ -1,0 +1,23 @@
+{
+  "name": "desktop-version-portfolio",
+  "version": "1.0.0",
+  "description": "- This is my fourth Project of building portfolio website - I will create sections within the website where I will include my portfolio projects to be viewable in desktop version and mobile version devices. - This sections of the mobile website include:     1. The toolbar section     2. Works section     3. The About myself     4. The contact section",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "hint": "^7.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevo-hacker/Desktop-Version-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kevo-hacker/Desktop-Version-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Kevo-hacker/Desktop-Version-Portfolio#readme"
+}
