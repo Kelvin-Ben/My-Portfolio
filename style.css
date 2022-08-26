@@ -6,7 +6,6 @@
 .container {
   background-color: #f7f7f9;
   width: 100%;
-  height: 6500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -17,7 +16,6 @@
   width: 23.5rem;
   height: 735px;
   background: #fff;
-  margin-top: 131px;
   border-bottom-left-radius: 100px;
   margin-bottom: 80px;
   background-image: url(./images/background.png);
@@ -28,9 +26,8 @@
 @media (min-width: 768px) {
   .introduction {
     width: 80%;
-    height: 500px;
+    height: 737px;
     background: #fff;
-    margin-top: 10px;
     border-bottom-left-radius: 100px;
     margin-bottom: 80px;
     background-image: url(./images/Header.png);
@@ -50,7 +47,14 @@
   margin-top: 10px;
 }
 
+@media (min-width: 768px) {
+  .toolbar {
+    margin-top: 13px;
+  }
+}
+
 .logo {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -160,7 +164,7 @@ a:last-child {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 3rem;
-    width: 327px;
+    width: 394px;
   }
 }
 
@@ -169,7 +173,6 @@ a:last-child {
   .details,
   .connect,
   .media-icons {
-    margin: 0 auto;
     margin-left: 20%;
     margin-bottom: 10px;
   }
@@ -232,14 +235,14 @@ a:last-child {
 
 @media (max-width: 480px) {
   .block1 {
-    top: 1932px;
+    top: 1800px;
     position: absolute;
   }
 }
 
 @media (max-width: 480px) {
   .block2 {
-    top: 207.7rem;
+    top: 199.7rem;
     position: absolute;
   }
 }
@@ -641,6 +644,7 @@ button {
 .skills {
   width: 237px;
   height: 24px;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -760,21 +764,6 @@ button {
   font-weight: bold;
 }
 
-.bar {
-  width: auto;
-  height: 35px;
-  display: flex;
-  margin-top: 30px;
-}
-
-#bar {
-  width: 134px;
-  height: 5px;
-  margin: 0 auto;
-  background: #0d151e;
-  border-radius: 10px;
-}
-
 @media (min-width: 768px) {
   .about {
     display: grid;
@@ -806,7 +795,7 @@ button {
     #media {
       align-items: flex-start;
       margin-top: -41px;
-      margin-left: -130px;
+      margin-left: -200px;
     }
   }
 
@@ -880,7 +869,7 @@ button {
 
   @media (min-width: 768px) {
     .get {
-      margin-left: -110px;
+      margin-left: -175px;
       margin-top: 16px;
     }
   }
@@ -909,7 +898,7 @@ button {
 @media (min-width: 768px) {
   .contact-me {
     width: 89%;
-    height: 790px;
+    height: 685px;
     background: #6070ff;
     border-top-left-radius: 100px;
     margin-top: -160px;
@@ -941,7 +930,13 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 152px;
+    margin-left: 164px;
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .name {
+    margin-top: 152px;
   }
 }
