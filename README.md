@@ -1,7 +1,7 @@
 # Desktop-Version-Portfolio
 - This project involved making my portfolio responsive
-- I will be adding media queries to the mobile versio portfolio so that it is responsive and adaptable by most of the screens.
-- This sections of the mobile website include:
+- I will be adding media queries to the mobile version portfolio so that it is responsive and adaptable to most screens.
+- These sections of the mobile website include:
     1. The toolbar section
     2. Works section
     3. The About myself
