@@ -63,6 +63,24 @@
   padding: 10px;
 }
 
+#link li {
+  border-bottom: none;
+  transition: border-bottom ease-in-out;
+}
+
+#link li:hover{
+  border-bottom: 4px solid #6070ff;
+  border-radius: 5px;
+}
+
+.media-icon ul li{
+  transition: transform 0.275s ease-in-out;
+}
+
+.media-icon ul li:hover{
+  transform: translateY(-10px) scale(1.5) rotate(360deg); 
+}
+
 .union1 {
   display: block;
   margin-right: 20px;
