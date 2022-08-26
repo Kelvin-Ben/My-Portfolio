@@ -63,6 +63,33 @@
   padding: 10px;
 }
 
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+.media-icon ul li {
+  transition: transform 0.275s ease-in-out;
+}
+
+.media-icon ul li:hover {
+  transform: translateY(-10px) scale(1.5) rotate(360deg);
+}
+
+#link li {
+  border-bottom: none;
+  transition: border-bottom ease-in-out;
+}
+
+#link li:hover {
+  border-bottom: 4px solid #6070ff;
+  border-radius: 5px;
+}
+
 .union1 {
   display: block;
   margin-right: 20px;
@@ -144,15 +171,6 @@ a {
 
 ul {
   display: flex;
-}
-
-li {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 24px;
-  margin-top: 10px;
 }
 
 a:last-child {
