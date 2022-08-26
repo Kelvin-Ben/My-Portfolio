@@ -1,7 +1,7 @@
 # Desktop-Version-Portfolio
-- This is my fourth Project of building portfolio website
-- I will create sections within the website where I will include my portfolio projects to be viewable in desktop version and mobile version devices.
-- This sections of the mobile website include:
+- This project involved making my portfolio responsive
+- I will be adding media queries to the mobile version portfolio so that it is responsive and adaptable to most screens.
+- These sections of the mobile website include:
     1. The toolbar section
     2. Works section
     3. The About myself
@@ -10,6 +10,7 @@
 ## Built With
 
 - HTML/CSS linters
+- media queries
 
 
 
