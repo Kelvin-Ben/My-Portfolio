@@ -19,10 +19,12 @@
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  margin-top: 10%;
 }
 
 #closer {
   padding: 18px;
+  margin-right: 35px;
 }
 
 a {
