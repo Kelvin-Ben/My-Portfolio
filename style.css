@@ -948,7 +948,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 164px;
+    margin-left: 198px;
     margin-top: 10px;
   }
 }
@@ -958,3 +958,40 @@ button {
     margin-top: 152px;
   }
 }
+/* hamburger */
+/* .wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  transform: translate(-50%,-50%);
+}
+.navbar{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 5px solid #49b293;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar div{
+  height: 8px;
+  width: 60px;
+  background-color: #fff;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.navbar .first{
+  top: 25px;
+  left: 20px;
+}
+
+.navbar .second{
+  top: 45px;
+  left: 20px;
+}
+
+.navbar .third{
+  top: 65px;
+  left: 20px;
+} */
