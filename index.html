@@ -9,13 +9,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="./navbar.js"></script>
 </head>
 <body>
   <main class="container">
     <div class="introduction">
+      <div id="overlay">
+        <div id="close-container" onclick="menuClose()">
+          <a id="closer" onclick="menuClose()"><img src="./images/Icon.png" alt="Close" onclick="menuClose()"></a>
+        </div>
+        <div id="menucontainer">
+          <a href="#Portfolio" onclick="menuClose()">Portfolio</a>
+          <a href="#about" onclick="menuClose()">About</a>
+          <a href="#Contact" onclick="menuClose()">Contact</a>
+        </div>
+      </div>
     <header class="toolbar">
       <div class="logo"><h5>My Logo</h5></div>
-      
       <ul id="link">
         <li class="link"><a href="">Portfolio</a></li>
         <li class="link"><a href="">About</a></li>
@@ -29,7 +39,7 @@
           </div>
         </div>
       </ul>
-      <img src="./images/Union1.png" alt="" class="union1">
+      <img src="./images/Union1.png" alt="" class="union1" onclick="menuOpen()">
     </header>
     <div class="name">
       <h1>I’m Benjamin
@@ -52,7 +62,7 @@
           </ul>
         </div>
   </div>
-  <section class="workcards">
+  <section class="workcards" id="Portfolio">
     <article class="workcard">
       <div>
       <img src="./images/SnapshootPortfolio.png" alt="" class="image">
@@ -158,7 +168,7 @@
               </div>
           </article>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="left-block">
       <div id="myself">
     <h2 class="myself">About
@@ -215,7 +225,7 @@
       <div class="line"></div>
     </div>
 </section>
-<section class="contact-me">
+<section class="contact-me" id="Contact">
   <h2 id="contact-me">Contact me</h2>
   <p id="text">If you have an application you are interested in developing, 
     a feature that you need built or a project that needs coding. 
