@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function menuOpen() {
   document.getElementById('overlay').style.display = 'flex';
 }
@@ -18,11 +19,11 @@ const projects = [
       'CANOPY', 'Back End Dev', '2015',
     ],
     languages: [
-      'html','css','javaScript',
+      'html', 'css', 'javaScript',
     ],
-    liveversion: 'placeholder',
+    live_version: 'placeholder',
     source: 'https://github.com/Kelvin-Ben/Desktop-Version-Portfolio',
-    id:'1',
+    id: '1',
   },
   {
     name: 'Multi-Post Stories',
@@ -32,23 +33,23 @@ const projects = [
       'FACEBOOK', 'Back End Dev', '2015',
     ],
     languages: [
-      'html','Ruby on rails','css','javascript',
+      'html', 'Ruby on rails', 'css', 'javascript',
     ],
-    liveversion: 'placeholder',
+    live_version: 'placeholder',
     source: 'https://github.com/Kelvin-Ben/Desktop-Version-Portfolio',
-    id: '2'
+    id: '2',
   },
   {
-  name: 'Tonic',
+    name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredimage: './images/SnapshootPortfolio3.png',
     technologies: [
       'CANOPY', 'Back End Dev', '2015',
     ],
     languages: [
-      'html','css','javaScript',
+      'html', 'css', 'javaScript',
     ],
-    liveversion: 'placeholder',
+    live_version: 'placeholder',
     source: 'https://github.com/Kelvin-Ben/Desktop-Version-Portfolio',
     id: '3',
   },
@@ -60,9 +61,9 @@ const projects = [
       'Uber', 'Lead Developer', '2018',
     ],
     languages: [
-      'html','Ruby on rails','css','javascript',
+      'html', 'Ruby on rails', 'css', 'javascript',
     ],
-    liveversion: 'placeholder',
+    live_version: 'placeholder',
     source: 'https://github.com/Kelvin-Ben/Desktop-Version-Portfolio',
     id: '4',
   },
@@ -94,5 +95,58 @@ projects.forEach((item) => {
       </div>
       <button class="projects"><span class="see-projects">see projects</span></button>
     </div>
-  </article>`;
+  </article>
+  `;
 });
+const popup = [
+  {
+    id: '1',
+    name: 'Tonic',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featured: ['CANOPY', 'Back End Dev', '2015'],
+    image: './images/SnapshootPortfolio.png',
+    imageDesktop: './images/DesktopSnapshootPortfolio.png',
+    technologies: ['html', 'css', 'javascript'],
+    live_version: '',
+    source_link: '',
+  },
+  {
+    id: '2',
+    name: 'Multi-Post Stories',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featured: ['CANOPY', 'Back End Dev', '2015'],
+    image: './images/SnapshootPortfolio.png',
+    imageDesktop: './images/DesktopSnapshootPortfolio.png',
+    technologies: ['html', 'css', 'javascript'],
+    live_version: '',
+    source_link: '',
+  },
+  {
+    id: '3',
+    name: 'Tonic',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featured: ['CANOPY', 'Back End Dev', '2015'],
+    image: './images/SnapshootPortfolio.png',
+    imageDesktop: './images/DesktopSnapshootPortfolio.png',
+    technologies: ['html', 'css', 'javascript'],
+    live_version: '',
+    source_link: '',
+  },
+  {
+    id: '4',
+    name: 'Multi-Post Stories',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featured: ['CANOPY', 'Back End Dev', '2015'],
+    image: './images/SnapshootPortfolio.png',
+    imageDesktop: './images/DesktopSnapshootPortfolio.png',
+    technologies: ['html', 'css', 'javascript'],
+    live_version: '',
+    source_link: '',
+  },
+];
+
+
