@@ -15,9 +15,9 @@ const projects = [
     name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredimage: './images/SnapshootPortfolio.png',
-    technologies: [
-      'CANOPY', 'Back End Dev', '2015',
-    ],
+    technologies: 'CANOPY', 
+    role: 'Back End Dev', 
+    year: '2015',
     languages: [
       'html', 'css', 'javaScript',
     ],
@@ -29,9 +29,9 @@ const projects = [
     name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredimage: './images/SnapshootPortfolio2.png',
-    technologies: [
-      'FACEBOOK', 'Back End Dev', '2015',
-    ],
+    technologies: 'FACEBOOK', 
+    role: 'Back End Dev', 
+    year: '2015',
     languages: [
       'html', 'Ruby on rails', 'css', 'javascript',
     ],
@@ -43,9 +43,9 @@ const projects = [
     name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredimage: './images/SnapshootPortfolio3.png',
-    technologies: [
-      'CANOPY', 'Back End Dev', '2015',
-    ],
+    technologies: 'CANOPY',
+    role: 'Back End Dev', 
+    year: '2015',
     languages: [
       'html', 'css', 'javaScript',
     ],
@@ -57,9 +57,9 @@ const projects = [
     name: 'Uber Navigation',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredimage: './images/SnapshootPortfolio4.png',
-    technologies: [
-      'Uber', 'Lead Developer', '2018',
-    ],
+    technologies: 'Uber', 
+    role: 'Lead Developer', 
+    year: '2018',
     languages: [
       'html', 'Ruby on rails', 'css', 'javascript',
     ],
@@ -68,6 +68,16 @@ const projects = [
     id: '4',
   },
 ];
+
+const ret = (arr) => {
+  let lang = '';
+  arr.forEach((item) => {
+    lang += `<li>${item}</li>`;
+    return lang;
+  });
+  return lang;
+};
+
 const workcards = document.getElementById('Portfolio');
 
 projects.forEach((item) => {
@@ -76,29 +86,27 @@ projects.forEach((item) => {
   <img src=${item.featuredimage} alt="" class="image">
   </div>
     <div class="block">
-      <h2 class="tonic1">Tonic</h2>
+      <h2 class="tonic1">${item.name}</h2>
       <div class="technologies">
-      <div class="frame canopy">CANOPY</div>
+      <div class="frame canopy">${item.technologies}</div>
       <div class="frame counter"></div>
-      <div class="frame backend">Back End Dev</div>
+      <div class="frame backend">${item.role}</div>
       <div class="frame counter"></div>
-      <div class="frame year">2015</div>
+      <div class="frame year">${item.year}</div>
     </div>
-    <p class="paragraph">A daily selection of privately personalized reads; 
-      no accounts or sign-ups required.</p>
+    <p class="paragraph">${item.description}</p>
       <div class="tags">
         <ul>
-          <li class="tag html">html</li>
-          <li class="tag css">css</li>
-          <li class="tag javascript">javaScript</li>
+        ${ret(item.languages, item)}
         </ul>
       </div>
-      <button class="projects"><span class="see-projects">see projects</span></button>
+      <button class="projects" id=${item.id} onclick="popupOpen(this.id)"><span class="see-projects">See Projects</span></button>
     </div>
   </article>
   `;
 });
-const popup = [
+
+/*const popuparray = [
   {
     id: '1',
     name: 'Tonic',
@@ -147,6 +155,52 @@ const popup = [
     live_version: '',
     source_link: '',
   },
-];
+];*/
+
+const popup = document.getElementById('popup');
+
+const popupbutton = document.getElementsByClassName('projects');
+
+function popupClose() {
+  popup.style.display = 'none';
+}
+
+function popupOpen(id) {
+  popup.style.display = 'block';
+  projects.forEach((item) => {
+    if (id === item.id) {
+      popup.innerHTML += `<div class="popup">
+      <div class="block">
+        <div class="closer"><img id="closer" src="Icon.png" alt="close" onclick="popupClose()"><div>
+        <h2 class="tonic1">${item.name}</h2>
+        <div class="technologies">
+        <div class="frame canopy">${item.technologies}</div>
+        <div class="frame counter"></div>
+        <div class="frame backend">${item.role}</div>
+        <div class="frame counter"></div>
+        <div class="frame year">${item.year}</div>
+      </div>
+      </div>
+      <img src=${item.featuredimage} alt="">
+      <p class="lorem">${item.description}</p>
+      <div class="tags">
+        <ul>
+        ${ret(item.languages, item)}
+        </ul>
+      </div>
+      <div id="btn">
+        <span class="action">
+          <h4>See live</h4>
+          <img src="./images/see.png" alt="See live" class="see">
+        </span>
+        <span class="action">
+          <h5>See Source</h5>
+          <img src="./images/Icon-GitHub.png" alt="" id="see">
+        </span>
+      </div>
+    </div#>`;
+    }
+  });
+}
 
 
