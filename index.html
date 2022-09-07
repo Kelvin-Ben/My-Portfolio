@@ -9,14 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="./navbar.js"></script>
 </head>
 <body>
   <main class="container">
     <div class="introduction">
       <div id="overlay">
         <div id="close-container" onclick="menuClose()">
-          <a id="closer" onclick="menuClose()"><img src="./images/Icon.png" alt="Close" onclick="menuClose()"></a>
+          <a id="closer" onclick="menuClose()">
+            <img src="./images/Icon.png" alt="Close" onclick="menuClose()">
+          </a>
         </div>
         <div id="menucontainer">
           <a href="#Portfolio" onclick="menuClose()">Portfolio</a>
@@ -55,7 +56,7 @@
         </div>
   </div>
   <section class="workcards" id="Portfolio">
-    <article class="workcard">
+    <article class="workcard" id="1">
       <div>
       <img src="./images/SnapshootPortfolio.png" alt="" class="image">
       </div>
@@ -80,7 +81,7 @@
           <button class="projects"><span class="see-projects">see projects</span></button>
         </div>
       </article>
-      <article class="workcard">
+      <article class="workcard" id="2">
           <div class="block1">
             <h2 class="tonic1">Multi-Post Stories</h2>
             <div class="technologies">
@@ -106,7 +107,7 @@
             <img src="./images/SnapshootPortfolio2.png" alt="" class="image">
             </div>
         </article>
-        <article class="workcard">
+        <article class="workcard" id="3">
           <div>
           <img src="./images/SnapshootPortfolio3.png" alt="" class="image">
           </div>
@@ -133,7 +134,7 @@
             </div>
             <img src="./images/hand-cursor.png" alt="" id="hand-cursor">
           </article>
-          <article class="workcard">
+          <article class="workcard" id="4">
             <div class="block2">
               <h2 class="tonic1">Uber Navigation</h2>
               <div class="technologies">
@@ -238,5 +239,6 @@
     </form>
 </section>
   </main>
+  <script src="./navbar.js"></script>
 </body>
 </html>
