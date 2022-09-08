@@ -164,3 +164,21 @@ function popupOpen(id) {
     }
   });
 }
+
+// eslint-disable-next-line no-unused-vars
+const form = document.getElementById('mail');
+
+// eslint-disable-next-line no-unused-vars
+function validator(form) {
+  const msgholder = document.getElementById('emailerror');
+  const regex = /[A-Z]/g;
+  const errormsg = 'The content of the email field has to be in lower case!';
+  const emailcontent = form.email.value;
+  console.log(emailcontent);
+  if (regex.test(emailcontent)) {
+    console.log(errormsg);
+    msgholder.innerHTML = errormsg;
+    return false;
+  }
+  return true;
+}
