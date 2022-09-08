@@ -183,3 +183,27 @@ form.addEventListener('submit', (e) => {
     setTimeout(() => { form.submit(); }, 1300);
   }
 });
+
+form.addEventListener('input', () => {
+  const formName = document.getElementById('name');
+  const formEmail = document.getElementById('email');
+  const formTextArea = document.getElementById('textarea');
+  const object = {
+    nameinput: formName.value,
+    emailinput: formEmail.value,
+    textareainput: formTextArea.value,
+  };
+  window.localStorage.setItem('storedInfo', JSON.stringify(object));
+});
+
+function fillfield(input) {
+  form.name.value = input.nameinput;
+  form.email.value = input.emailinput;
+  form.textarea.textContent = input.textareainput;
+}
+
+window.addEventListener('load', () => {
+  const info = window.localStorage.getItem('storedInfo');
+  const infoObj = JSON.parse(info);
+  fillfield(infoObj);
+});
