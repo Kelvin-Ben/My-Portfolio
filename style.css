@@ -1160,3 +1160,26 @@ button {
 #block {
   display: flex;
 }
+
+.hidden {
+  display: none;
+}
+
+.error {
+  display: block;
+  color: crimson;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+}
+
+.success {
+  display: block;
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+}
