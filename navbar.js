@@ -164,21 +164,22 @@ function popupOpen(id) {
     }
   });
 }
+const form = document.querySelector('#form');
+const emailAdrdress = document.getElementById('email');
 
-// eslint-disable-next-line no-unused-vars
-const form = document.getElementById('mail');
+const emailPattern = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g;
+const msgError = document.querySelector('#message_error');
+const msgSuccess = document.querySelector('#message_success');
 
-// eslint-disable-next-line no-unused-vars
-function validator(form) {
-  const msgholder = document.getElementById('emailerror');
-  const regex = /[A-Z]/g;
-  const errormsg = 'The content of the email field has to be in lower case!';
-  const emailcontent = form.email.value;
-  console.log(emailcontent);
-  if (regex.test(emailcontent)) {
-    console.log(errormsg);
-    msgholder.innerHTML = errormsg;
-    return false;
+form.addEventListener('submit', (e) => {
+  if (!emailAdrdress.value.match(emailPattern)) {
+    e.preventDefault();
+    msgError.classList.toggle('error');
+
+    setTimeout(() => { msgError.classList.toggle('error'); }, 1300);
+  } else {
+    msgSuccess.classList.toggle('success');
+
+    setTimeout(() => { form.submit(); }, 1300);
   }
-  return true;
-}
+});
