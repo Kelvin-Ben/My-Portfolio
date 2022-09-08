@@ -159,8 +159,8 @@ function popupOpen(id) {
         </span>
       </div>
     </div>
-</div>
-    </div>`;
+    </div>
+</div>`;
     }
   });
 }
