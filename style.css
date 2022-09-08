@@ -1007,23 +1007,28 @@ button {
     margin-left: 198px;
     margin-top: 10px;
   }
+
   .technologies {
     margin-left: -21px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
+
   .tonic1 {
     margin-left: 0;
   }
 }
+
 @media (max-width: 480px) {
   .technologies {
     margin-left: -21px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
+
   .tonic1 {
     margin-left: 0;
   }
 }
+
 @media (min-width: 768px) {
   .name {
     margin-top: 152px;
