@@ -119,7 +119,7 @@ function popupClose() {
 }
 
 function popupOpen(id) {
-  popup.style.display = 'flex';
+  popup.style.display = 'block';
   projects.forEach((item) => {
     if (id === item.id) {
       popup.innerHTML += `
