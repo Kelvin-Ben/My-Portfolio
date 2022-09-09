@@ -76,7 +76,7 @@ const projects = [
 const ret = (arr) => {
   let lang = '';
   arr.forEach((item) => {
-    lang += `<li>${item}</li>`;
+    lang = `<li>${item}</li>`;
     return lang;
   });
   return lang;
@@ -119,9 +119,9 @@ function popupClose() {
 }
 
 function popupOpen(id) {
-  popup.style.display = 'block';
+  popup.style.display = 'flex';
   projects.forEach((item) => {
-    if (id === item.id) {
+    if (id == item.id) {
       popup.innerHTML += `
     <div class="popup">
         <div class="closer">
@@ -168,10 +168,10 @@ const form = document.querySelector('#form');
 const emailAdrdress = document.getElementById('email');
 
 const emailPattern = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g;
-const msgError = document.querySelector('#message_error');
+const msgError = document.querySelector('#messageerror');
 const msgSuccess = document.querySelector('#message_success');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', => {
   if (!emailAdrdress.value.match(emailPattern)) {
     e.preventDefault();
     msgError.classList.toggle('error');
@@ -186,7 +186,7 @@ form.addEventListener('submit', (e) => {
 
 form.addEventListener('input', () => {
   const formName = document.getElementById('name');
-  const formEmail = document.getElementById('email');
+  const formEmail = document.getElementById('mail');
   const formTextArea = document.getElementById('textarea');
   const object = {
     nameinput: formName.value,
