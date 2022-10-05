@@ -20,7 +20,22 @@
 - Twitter: [@kevoyout144] (https://twitter.com/kevoyout144)
 - LinkedIn: [Kelvin Ben] (https://www.linkedin.com/in/kelvin-ben-323043173/)
 
-👤 
+
+## Link to [Live Demo](https://kelvin-ben.github.io/Desktop-Version-Portfolio/)
+
+
+
+
+### Setup
+    -using git command line
+      if you are using the git command line, please use this command in your terminal
+        git@github.com:Kelvin-Ben/Desktop-Version-Portfolio.git
+    -using the GitHub Desktop
+      if you are using the desktop version of github, please  click on the green "code" button and click on "Open with GitHub Desktop" 
+
+
+### Install
+    Install the linters in your local environment to mantain your code clean 
 
 ## 🤝 Contributing
 
